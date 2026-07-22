@@ -91,7 +91,6 @@ def update_task(id: int, upd_task: TaskUpdate):
         detail="Task not found"
     )
 
-from fastapi import Response
 
 @app.delete("/tasks/{id}", status_code=204)
 def delete_task(id: int):
